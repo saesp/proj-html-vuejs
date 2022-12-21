@@ -34,13 +34,8 @@ export default {
 
         <section class="sect-3">
             <ul class="nav-ul">
-                <li>Home</li>
-                <li>Recipes</li>
-                <li>Places</li>
-                <li>Blog</li>
-                <li>About</li>
-                <li>Contact</li>
-                <li>Search</li>
+                <li v-for="nav in store.navList" :class="nav.status === 'active' ? 'nav-active' : ''">{{ nav.name }}
+                </li>
             </ul>
         </section>
     </header>
@@ -76,6 +71,15 @@ header {
     @include flex-center;
     gap: 40px;
     list-style-type: none;
+
+    li {
+        padding-bottom: 7px;
+    }
+
+    .nav-active {
+        color: orange;
+        border-bottom: 3px solid orange;
+    }
 }
 
 // flex-center

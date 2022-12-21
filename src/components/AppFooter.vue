@@ -1,4 +1,4 @@
-<script setup>
+<script>
 
 </script>
 
@@ -7,5 +7,5 @@
 </template>
 
 <style lang="scss" scoped>
-// @use '../style/general.scss' as *;
+// @use '../general.scss' as *;
 </style>
