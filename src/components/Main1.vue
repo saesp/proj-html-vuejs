@@ -17,17 +17,17 @@ export default {
             <div>
                 <div>
                     <img src="../../img/imgs/single-post-img3-200x132.jpg" alt="">
-                    <h3>Food Corner: Top Japanese Restaurants for Sushi</h3>
+                    <h4>Food Corner: Top Japanese Restaurants for Sushi</h4>
                     <div class="date">March 25, 2019</div>
                 </div>
                 <div>
                     <img src="../../img/imgs/single-post-img3-200x132.jpg" alt="">
-                    <h3>Food Corner: Top Japanese Restaurants for Sushi</h3>
+                    <h4>Food Corner: Top Japanese Restaurants for Sushi</h4>
                     <div class="date">March 25, 2019</div>
                 </div>
                 <div>
                     <img src="../../img/imgs/single-post-img3-200x132.jpg" alt="">
-                    <h3>Food Corner: Top Japanese Restaurants for Sushi</h3>
+                    <h4>Food Corner: Top Japanese Restaurants for Sushi</h4>
                     <div class="date">March 25, 2019</div>
                 </div>
             </div>
@@ -43,6 +43,7 @@ export default {
     background-size: cover;
     height: 500px;
     position: relative;
+    margin: 0 0 50vh;
 }
 
 #todays-pick {
@@ -66,11 +67,12 @@ export default {
 
 #foodie-journal {
     background-color: white;
+    width: 65%;
     padding: 25px;
     position: absolute;
     transform: translate(50%);
     right: 50%;
-    bottom: -40vh;
+    bottom: -35vh;
 
     h3 {
         text-align: center;

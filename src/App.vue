@@ -2,6 +2,7 @@
 import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
 import Main1 from './components/Main1.vue'
+import Main2 from './components/Main2.vue'
 import { store } from './store.js'
 
 export default {
@@ -9,6 +10,7 @@ export default {
   components: {
     AppHeader,
     Main1,
+    Main2,
     AppFooter
   },
 
@@ -25,6 +27,7 @@ export default {
 
   <main>
     <Main1 />
+    <Main2 />
   </main>
 
   <AppFooter />
