@@ -10,7 +10,6 @@ export default {
             <span>
                 <h3>CULINARY COLLECTION</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius nobis aut voluptatem numquam dicta
-                    cumque maxime tenetur repellat
                 </p>
             </span>
             <button>READ OUR BLOG</button>
@@ -80,11 +79,11 @@ export default {
                 </div>
                 <div id="follow">Follow Us</div>
                 <ul>
-                    <li>FB</li>
-                    <li>FB</li>
-                    <li>FB</li>
-                    <li>FB</li>
-                    <li>FB</li>
+                    <li><i class="fa-brands fa-facebook-f"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-youtube"></i></li>
+                    <li><i class="fa-brands fa-pinterest-p"></i></li>
                 </ul>
             </span>
         </div>
@@ -108,11 +107,14 @@ export default {
     }
 
     p {
-        width: 85vh;
+        width: 60vh;
     }
 
     button {
         padding: 7px 12px;
+        color: white;
+        background-color: $orange;
+        border: 0;
     }
 }
 
@@ -187,8 +189,10 @@ export default {
             }
 
             button {
+                background-color: $grey;
                 width: 100%;
-                padding: 5px 0;
+                padding: 10px 0;
+                border: 0;
             }
 
         }
@@ -200,24 +204,47 @@ export default {
 
         img {
             width: 100%;
-            height: 330px;
+            margin-bottom: 30px;
         }
 
         #input {
             padding-top: 30px;
-            margin-top: 30px;
             border-top: 1px solid gray;
+            margin-bottom: 30px;
 
             input {
                 width: 100%;
-                padding: 10px 5px;
+                padding: 10px;
+                border: 2px solid $grey;
+                border-radius: 7px;
             }
+        }
+
+        #follow {
+            color: $orange;
+            margin-bottom: 15px;
         }
 
         ul {
             list-style-type: none;
             display: flex;
             gap: 10px;
+
+            li {
+                width: 25px;
+                height: 25px;
+                padding: 20px;
+                background-color: $grey;
+                position: relative;
+                border-radius: 7px;
+
+                i {
+                    position: absolute;
+                    transform: translate(50%, 50%);
+                    right: 50%;
+                    bottom: 50%;
+                }
+            }
         }
     }
 }

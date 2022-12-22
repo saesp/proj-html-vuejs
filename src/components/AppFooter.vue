@@ -13,68 +13,74 @@ export default {
 </script>
 
 <template>
-    <section class="sect-1">
-        <h3>Subscribe E Receive A Free eBook</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quaerat tenetur fugiat laboriosam maiores
-            neque sint culpa recusandae cumque dolorum cupiditate
-        </p>
-        <input type="email" placeholder="Insert your mail...*">
-        <button>SUBSCRIBE</button>
-        <div>Lorem ipsum dolor sit amet consectetur adipisicing el</div>
-    </section>
+    <footer>
+        <section class="sect-1">
+            <h3>Subscribe E Receive A Free eBook</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quaerat tenetur fugiat laboriosam maiores
+                neque sint culpa recusandae cumque dolorum cupiditate
+            </p>
+            <input type="email" placeholder="Insert your mail...*">
+            <button>SUBSCRIBE</button>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing el</div>
+        </section>
 
-    <section class="sect-2">
-        <ul>
-            <li><img src="../../img/imgs/Yogurt-Nan.jpg" alt=""></li>
-            <li><img src="../../img/imgs/Mixed-fruits.jpg" alt=""></li>
-            <li><img src="../../img/imgs/r-rachel-park-366508-unsplash-min.jpg" alt=""></li>
-            <li><img src="../../img/imgs/r-michelle-tsang-500721-unsplash-min.jpg" alt=""></li>
-        </ul>
-    </section>
-
-    <section class="sect-3">
-        <div class="part1">
-            <img src="../../img/imgs/avada-food-logo-mob.png" alt="">
-            <div id="social">
-
-            </div>
-        </div>
-        <div class="part2">
+        <section class="sect-2">
             <ul>
-                <li v-for="nav in store.navList" :class="nav.status == 'active' ? 'disp-none' : ''">{{ nav.name }}
-                </li>
+                <li><img src="../../img/imgs/Yogurt-Nan.jpg" alt=""></li>
+                <li><img src="../../img/imgs/Mixed-fruits.jpg" alt=""></li>
+                <li><img src="../../img/imgs/r-rachel-park-366508-unsplash-min.jpg" alt=""></li>
+                <li><img src="../../img/imgs/r-michelle-tsang-500721-unsplash-min.jpg" alt=""></li>
             </ul>
-        </div>
-        <div class="part3">
-            <h4>CONTACT</h4>
-            <div>775 New York Ave</div>
-            <div>+0100-505-0000</div>
-            <div>info@your-domain.com</div>
-        </div>
-        <div class="part4">
-            <h4>GET OUR APP</h4>
-            <div><img src="../../img/imgs/download-android.png" alt=""></div>
-            <div><img src="../../img/imgs/download-app-store.png" alt=""></div>
-        </div>
-    </section>
+        </section>
 
-    <section class="sect-4">
-        Copyright
-    </section>
+        <section class="sect-3">
+            <div class="part1">
+                <img src="../../img/imgs/avada-food-logo-mob.png" alt="">
+                <div id="social">
 
+                </div>
+            </div>
+            <div class="part2">
+                <ul>
+                    <li v-for="nav in store.navList" :class="nav.status == 'active' ? 'disp-none' : ''">{{ nav.name }}
+                    </li>
+                </ul>
+            </div>
+            <div class="part3">
+                <h4>CONTACT</h4>
+                <div>775 New York Ave</div>
+                <div>+0100-505-0000</div>
+                <div>info@your-domain.com</div>
+            </div>
+            <div class="part4">
+                <h4>GET OUR APP</h4>
+                <div><img src="../../img/imgs/download-android.png" alt=""></div>
+                <div><img src="../../img/imgs/download-app-store.png" alt=""></div>
+            </div>
+        </section>
+
+        <section class="sect-4">
+            Copyright
+        </section>
+    </footer>
 </template>
 
 <style lang="scss" scoped>
 @use '../style.scss' as *;
 
+footer {
+    background-color: white;
+}
+
 .sect-1 {
     padding: 20vh 0;
     text-align: center;
+    background-color: white;
     // background-image: url(../../img/imgs/baking-recipes.png);
-    background-color: red;
 
     h3 {
         margin-bottom: 15px;
+        font-size: 24px;
     }
 
     p {
@@ -92,6 +98,9 @@ export default {
     button {
         padding: 10px 40px;
         margin-left: 10px;
+        color: white;
+        background-color: $orange;
+        border: 0;
     }
 
     >div {
@@ -154,8 +163,8 @@ export default {
 }
 
 .sect-4 {
+    background-color: $bodyGrey;
     text-align: center;
     padding: 30px 0 10px;
-    background-color: $hardGrey;
 }
 </style>

@@ -16,19 +16,20 @@ export default {
             <h3>FOODIE JOURNAL</h3>
             <div>
                 <div>
-                    <img src="../../img/imgs/single-post-img3-200x132.jpg" alt="">
+                    <img src="../../img/imgs/single-post-img3.jpg" alt="">
                     <h4>Food Corner: Top Japanese Restaurants for Sushi</h4>
                     <div class="date">March 25, 2019</div>
                 </div>
                 <div>
-                    <img src="../../img/imgs/single-post-img3-200x132.jpg" alt="">
+                    <img src="../../img/imgs/fi-roundup.jpg" alt="">
                     <h4>Food Corner: Top Japanese Restaurants for Sushi</h4>
                     <div class="date">March 25, 2019</div>
                 </div>
                 <div>
-                    <img src="../../img/imgs/single-post-img3-200x132.jpg" alt="">
+                    <img src="../../img/imgs/fi-toasts.jpg" alt="">
                     <h4>Food Corner: Top Japanese Restaurants for Sushi</h4>
-                    <div class="date">March 25, 2019</div>
+                    <div class=" date">March 25, 2019
+                    </div>
                 </div>
             </div>
         </div>
@@ -47,8 +48,10 @@ export default {
 }
 
 #todays-pick {
+    padding: 30px 40px;
+    border-radius: 7px;
     background-color: white;
-    width: 30%;
+    width: 35%;
     text-align: center;
     position: absolute;
     margin: auto;
@@ -56,7 +59,13 @@ export default {
     bottom: 50%;
     right: 50%;
 
+    h1 {
+        color: $black;
+    }
+
     #orange-cell {
+        padding: 7px 12px;
+        border-radius: 7px;
         position: absolute;
         background-color: orange;
         transform: translate(50%);
@@ -66,6 +75,7 @@ export default {
 }
 
 #foodie-journal {
+    text-align: center;
     background-color: white;
     width: 65%;
     padding: 25px;
@@ -75,7 +85,6 @@ export default {
     bottom: -35vh;
 
     h3 {
-        text-align: center;
         margin-bottom: 25px;
     }
 
@@ -85,6 +94,12 @@ export default {
 
         img {
             width: 100%;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            width: 225px;
+            margin: 0 auto 7px;
         }
     }
 

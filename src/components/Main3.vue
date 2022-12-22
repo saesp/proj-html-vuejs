@@ -9,43 +9,41 @@ export default {
         <div class="intro">
             <h3>CULINARY COLLECTION</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius nobis aut voluptatem numquam dicta cumque
-                maxime tenetur repellat labore cupiditate, illo sequi, animi perspiciatis minus deserunt quae? Qui,
-                impedit obcaecati.
             </p>
         </div>
 
         <div class="cards">
             <div class="card">
-                <img src="../../img/imgs/baking-recipes.png" alt="">
-                <div>BAKERY</div>
+                <img src="../../img/imgs/drinks-recipes.png" alt="">
+                <div>DRINKS</div>
+            </div>
+            <div class="card">
+                <img src="../../img/imgs/soups-recipes.png" alt="">
+                <div>SOUPS</div>
             </div>
             <div class="card">
                 <img src="../../img/imgs/baking-recipes.png" alt="">
                 <div>BAKERY</div>
             </div>
             <div class="card">
-                <img src="../../img/imgs/baking-recipes.png" alt="">
-                <div>BAKERY</div>
+                <img src="../../img/imgs/dinner-recipes.png" alt="">
+                <div>DINNER</div>
             </div>
             <div class="card">
-                <img src="../../img/imgs/baking-recipes.png" alt="">
-                <div>BAKERY</div>
+                <img src="../../img/imgs/healthy-recipes.png" alt="">
+                <div>HEALTHY</div>
             </div>
             <div class="card">
-                <img src="../../img/imgs/baking-recipes.png" alt="">
-                <div>BAKERY</div>
+                <img src="../../img/imgs/staff-picks.png" alt="">
+                <div>STAFF PICKS</div>
             </div>
             <div class="card">
-                <img src="../../img/imgs/baking-recipes.png" alt="">
-                <div>BAKERY</div>
+                <img src="../../img/imgs/premium-recipes.png" alt="">
+                <div>APPETISERS</div>
             </div>
             <div class="card">
-                <img src="../../img/imgs/baking-recipes.png" alt="">
-                <div>BAKERY</div>
-            </div>
-            <div class="card">
-                <img src="../../img/imgs/baking-recipes.png" alt="">
-                <div>BAKERY</div>
+                <img src="../../img/imgs/quick-easy-recipes.png" alt="">
+                <div>QUICK & EASY</div>
             </div>
         </div>
     </div>
@@ -61,7 +59,8 @@ export default {
 }
 
 .intro {
-    margin-bottom: 50px;
+    width: 60vh;
+    margin: 0 auto 50px;
 
     h3 {
         margin-bottom: 20px;

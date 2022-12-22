@@ -17,14 +17,15 @@ export default {
         <section class="sect-1">
             <ul>
                 <li>Download App</li>
+                <li id="ios">iOS</li>
                 <li>Advetise with us</li>
             </ul>
 
             <ul>
-                <li>F</li>
-                <li>in</li>
-                <li>Tw</li>
-                <li>YT</li>
+                <li><i class="fa-brands fa-facebook-f"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-youtube"></i></li>
             </ul>
         </section>
 
@@ -49,6 +50,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    background-color: white;
 }
 
 .sect-1 {
@@ -58,8 +60,16 @@ header {
 
     ul {
         @include flex-center;
-        gap: 20px;
+        gap: 30px;
         list-style-type: none;
+
+        #ios {
+            background-color: $orange;
+            padding: 3px 7px;
+            border-radius: 5px;
+            color: white;
+            margin-left: -15px;
+        }
     }
 }
 
@@ -67,18 +77,21 @@ header {
     @include flex-center;
 }
 
-.nav-ul {
-    @include flex-center;
-    gap: 40px;
-    list-style-type: none;
+.sect-3 {
+    .nav-ul {
+        @include flex-center;
+        gap: 50px;
+        list-style-type: none;
 
-    li {
-        padding-bottom: 7px;
-    }
+        li {
+            color: $black;
+            padding-bottom: 7px;
+        }
 
-    .nav-active {
-        color: orange;
-        border-bottom: 3px solid orange;
+        .nav-active {
+            color: orange;
+            border-bottom: 3px solid orange;
+        }
     }
 }
 

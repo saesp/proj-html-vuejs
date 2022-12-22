@@ -1,13 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: lightgray;
-}
-
 @mixin flex-center {
     display: flex;
     justify-content: center;
@@ -22,7 +12,8 @@ body {
 
 // colors
 $lightGrey: #f6f7f1;
-$black: #262628;
+$bodyGrey: #f5f5f1;
+$black: #333338;
 $grey: #afafaf;
 $hardGrey: #6a6b65;
 $blue: #0492ad;
@@ -33,3 +24,19 @@ $orange: #fc7525;
 $orange: #fc7525;
 $orange: #fc7525;
 $orange: #fc7525;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f1;
+    color: $hardGrey;
+}
+
+h3,
+h4 {
+    color: $black;
+}

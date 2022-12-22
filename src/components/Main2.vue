@@ -72,7 +72,7 @@ export default {
 
         img {
             width: 480px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
 
         p,
@@ -96,9 +96,10 @@ export default {
 
         button {
             padding: 10px 12px;
-            background-color: orange;
+            background-color: $orange;
             margin: 0 25px;
             border: 0;
+            color: white;
         }
     }
 
