@@ -26,5 +26,5 @@ export const store = reactive({
             name: "Contact",
             status: "inactive"
         }
-    ]
+    ],
 })
