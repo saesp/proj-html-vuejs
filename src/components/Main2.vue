@@ -6,10 +6,14 @@ export default {
 
 <template>
     <div class="container">
-        <h3>POPULAR RECIPES</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, accusamus nobis tenetur veritatis alias
-            expedita nulla cumque doloremque ea quis ipsa impedit assumenda hic, aliquid fuga. Illo sint voluptatibus
-            vitae!</p>
+        <div class="intro">
+            <h3>POPULAR RECIPES</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, accusamus nobis tenetur veritatis alias
+                expedita nulla cumque doloremque ea quis ipsa impedit assumenda hic, aliquid fuga. Illo sint
+                voluptatibus
+                vitae!</p>
+        </div>
+
         <div class="cont-img">
             <span id="big-img">
                 <img src="../../img/imgs/Yogurt-Nan.jpg" alt="">
@@ -47,6 +51,16 @@ export default {
     // width: 65%;
     width: 987.48px;
     margin: auto;
+    margin-bottom: 20vh;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 50px;
+
+    h3 {
+        margin-bottom: 20px;
+    }
 }
 
 .cont-img {
@@ -58,6 +72,7 @@ export default {
 
         img {
             width: 480px;
+            margin-bottom: 20px;
         }
 
         p,
@@ -65,6 +80,18 @@ export default {
         h3 {
             width: 64vh;
             padding: 0 25px;
+        }
+
+        h3 {
+            margin-bottom: 5px;
+        }
+
+        div {
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 20px;
         }
 
         button {

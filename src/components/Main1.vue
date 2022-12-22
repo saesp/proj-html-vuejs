@@ -39,11 +39,11 @@ export default {
 @use '../style.scss' as *;
 
 .container {
-    background-image: url(../../img/imgs/single-post-img3-800x527.jpg);
+    background-image: url(../../img/imgs/single-post-img3.jpg);
     background-size: cover;
     height: 500px;
     position: relative;
-    margin: 0 0 50vh;
+    margin-bottom: 50vh;
 }
 
 #todays-pick {
@@ -87,7 +87,6 @@ export default {
             width: 100%;
         }
     }
-
 
 }
 </style>

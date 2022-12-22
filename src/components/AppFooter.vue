@@ -9,5 +9,5 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-// @use '../general.scss' as *;
+// @use '../style.scss' as *;
 </style>

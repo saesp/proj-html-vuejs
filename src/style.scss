@@ -13,3 +13,23 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// colors
+$lightGrey: #f6f7f1;
+$black: #262628;
+$grey: #afafaf;
+$hardGrey: #6a6b65;
+$blue: #0492ad;
+$hardBrown: #85430F;
+$turquoise: #28e3e2;
+$green: #1ca142;
+$orange: #fc7525;
+$orange: #fc7525;
+$orange: #fc7525;
+$orange: #fc7525;
