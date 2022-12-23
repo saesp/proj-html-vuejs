@@ -13,14 +13,18 @@
 // colors
 $lightGrey: #edede8;
 $bodyGrey: #f5f5f1;
-$black: #333338;
 $grey: #afafaf;
+$middleGrey: #94908b;
 $hardGrey: #6a6b65;
+$black: #333338;
 $blue: #0492ad;
 $hardBrown: #85430F;
 $turquoise: #28e3e2;
 $green: #1ca142;
 $orange: #fc7525;
+
+// font-family
+$times: 'Times New Roman', Times, serif;
 
 * {
     margin: 0;
@@ -32,6 +36,7 @@ body {
     background-color: #f5f5f1;
     color: $hardGrey;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 
 h3,
@@ -39,9 +44,13 @@ h4 {
     color: $black;
 }
 
+h3 {
+    letter-spacing: 3px;
+}
+
 h1,
 h4 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: $times;
 }
 
 h4 {

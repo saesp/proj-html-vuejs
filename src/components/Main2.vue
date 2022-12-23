@@ -75,7 +75,6 @@ export default {
             margin-bottom: 30px;
         }
 
-        p,
         div,
         h4 {
             width: 64vh;
@@ -91,7 +90,10 @@ export default {
         }
 
         p {
-            margin-bottom: 20px;
+            border-top: 2px solid $lightGrey;
+            padding-top: 30px;
+            margin: 0 25px 20px;
+            width: 56vh;
         }
 
         button {

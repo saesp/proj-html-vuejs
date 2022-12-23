@@ -55,13 +55,15 @@ header {
 }
 
 .sect-1 {
+    font-size: 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: $middleGrey;
 
     ul {
         @include flex-center;
-        gap: 30px;
+        gap: 25px;
         list-style-type: none;
 
         li {

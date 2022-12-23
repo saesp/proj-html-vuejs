@@ -96,7 +96,7 @@ export default {
 
 .container {
     width: 65%;
-    margin: 0 auto 30vh;
+    margin: 0 auto 15vh;
 }
 
 .intro {
@@ -239,14 +239,15 @@ export default {
             input {
                 width: 100%;
                 padding: 10px;
-                border: 2px solid $grey;
-                border-radius: 7px;
+                border: 2px solid $lightGrey;
+                border-radius: 5px;
             }
         }
 
         #follow {
             color: $orange;
             margin-bottom: 15px;
+            font-family: $times;
         }
 
         ul {

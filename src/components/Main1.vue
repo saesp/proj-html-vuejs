@@ -48,9 +48,8 @@ export default {
 }
 
 #todays-pick {
-    color: white;
-    padding: 30px 40px;
-    border-radius: 7px;
+    padding: 30px 30px;
+    border-radius: 5px;
     background-color: white;
     width: 35%;
     text-align: center;
@@ -62,16 +61,24 @@ export default {
 
     h1 {
         color: $black;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    .date {
+        font-family: $times;
+        color: $hardGrey;
     }
 
     #orange-cell {
+        color: white;
         padding: 7px 12px;
-        border-radius: 7px;
+        border-radius: 5px;
         position: absolute;
         background-color: $orange;
         transform: translate(50%);
         right: 50%;
-        top: -10px;
+        top: -16px;
     }
 }
 
@@ -90,7 +97,8 @@ export default {
     }
 
     >div {
-        @include flex-center;
+        display: flex;
+        justify-content: center;
         gap: 25px;
 
         img {
@@ -99,8 +107,11 @@ export default {
         }
 
         h4 {
-            width: 225px;
             margin: 0 auto 7px;
+        }
+
+        .date {
+            font-size: 12px;
         }
     }
 

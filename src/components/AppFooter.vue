@@ -21,7 +21,7 @@ export default {
             </p>
             <input type="email" placeholder="Insert your mail...*">
             <button class="orange-button">SUBSCRIBE</button>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing el</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing</div>
         </section>
 
         <section class="sect-2">
@@ -75,15 +75,12 @@ footer {
     background-color: white;
 }
 
-h4 {
-    color: $orange;
-    letter-spacing: 5px;
-}
-
+// sect 1
 .sect-1 {
     padding: 20vh 0;
     text-align: center;
     background-color: white;
+    font-size: 13px;
     // background-image: url(../../img/imgs/);
 
     h3 {
@@ -106,6 +103,8 @@ h4 {
         padding: 10px;
         width: 50vh;
         margin-right: 10px;
+        border: 2px solid $lightGrey;
+        border-radius: 5px;
     }
 
     button {
@@ -143,7 +142,10 @@ h4 {
     padding: 50px 0;
 
     h4 {
-        margin-bottom: 15px;
+        color: $orange;
+        letter-spacing: 5px;
+        font-size: 14px;
+        margin-bottom: 20px;
     }
 
     .part1 {
@@ -156,7 +158,7 @@ h4 {
             display: flex;
             gap: 15px;
             margin-top: 30px;
-            color: $grey;
+            color: $middleGrey;
             font-size: 14px;
 
             li {
@@ -192,6 +194,7 @@ h4 {
             margin-bottom: 10px;
             cursor: pointer;
             width: 200px;
+            color: $middleGrey;
 
             &:hover {
                 color: $orange;
@@ -216,8 +219,9 @@ h4 {
     }
 }
 
+// sect 4
 .sect-4 {
-    font-size: 12px;
+    font-size: 11px;
     background-color: $bodyGrey;
     text-align: center;
     padding: 30px 0 20px;

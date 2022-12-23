@@ -78,6 +78,8 @@ export default {
         width: calc(100%/4 - 30px);
         margin-bottom: 15px;
         padding: 15px;
+        color: $black;
+        font-size: 12px;
 
         img {
             height: 100px;
