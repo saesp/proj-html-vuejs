@@ -11,7 +11,7 @@
 }
 
 // colors
-$lightGrey: #f6f7f1;
+$lightGrey: #edede8;
 $bodyGrey: #f5f5f1;
 $black: #333338;
 $grey: #afafaf;
@@ -20,9 +20,6 @@ $blue: #0492ad;
 $hardBrown: #85430F;
 $turquoise: #28e3e2;
 $green: #1ca142;
-$orange: #fc7525;
-$orange: #fc7525;
-$orange: #fc7525;
 $orange: #fc7525;
 
 * {
@@ -34,9 +31,32 @@ $orange: #fc7525;
 body {
     background-color: #f5f5f1;
     color: $hardGrey;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h3,
 h4 {
     color: $black;
+}
+
+h1,
+h4 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+button {
+    cursor: pointer;
+    font-size: 12px;
+}
+
+input {
+    font-size: 12px;
+}
+
+.orange-button:hover {
+    background-color: orangered;
 }

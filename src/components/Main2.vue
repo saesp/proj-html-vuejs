@@ -17,14 +17,14 @@ export default {
         <div class="cont-img">
             <span id="big-img">
                 <img src="../../img/imgs/Yogurt-Nan.jpg" alt="">
-                <h3>Lunch Favourite with Salad, Naan and Beans</h3>
+                <h4>Lunch Favourite with Salad, Naan and Beans</h4>
                 <div>Bakery, Featured</div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magni recusandae numquam dolor sequi
                     dignissimos illum, aperiam ratione rem mollitia, qui dicta vel animi. Id excepturi labore totam
                     asperiores nostrum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod commodi beatae
                     eius. Molestias recusandae vitae asperiores unde eveniet optio nostrum repudiandae inventore maxime?
                     Eos corrupti veniam esse fugiat pariatur recusandae.</p>
-                <button>LEARN MORE</button>
+                <button class="orange-button">LEARN MORE</button>
             </span>
             <span id="small-img">
                 <ul>
@@ -77,12 +77,12 @@ export default {
 
         p,
         div,
-        h3 {
+        h4 {
             width: 64vh;
             padding: 0 25px;
         }
 
-        h3 {
+        h4 {
             margin-bottom: 5px;
         }
 
@@ -100,6 +100,10 @@ export default {
             margin: 0 25px;
             border: 0;
             color: white;
+
+            &:hover {
+                background-color: orangered;
+            }
         }
     }
 

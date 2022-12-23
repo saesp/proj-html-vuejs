@@ -37,6 +37,7 @@ export default {
             <ul class="nav-ul">
                 <li v-for="nav in store.navList" :class="nav.status === 'active' ? 'nav-active' : ''">{{ nav.name }}
                 </li>
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
             </ul>
         </section>
     </header>
@@ -63,6 +64,10 @@ header {
         gap: 30px;
         list-style-type: none;
 
+        li {
+            cursor: pointer;
+        }
+
         #ios {
             background-color: $orange;
             padding: 3px 7px;
@@ -86,11 +91,16 @@ header {
         li {
             color: $black;
             padding-bottom: 7px;
+            cursor: pointer;
+
+            &:hover {
+                color: $orange;
+            }
         }
 
         .nav-active {
-            color: orange;
-            border-bottom: 3px solid orange;
+            color: $orange;
+            border-bottom: 3px solid $orange;
         }
     }
 }

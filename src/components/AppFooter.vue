@@ -15,12 +15,12 @@ export default {
 <template>
     <footer>
         <section class="sect-1">
-            <h3>Subscribe E Receive A Free eBook</h3>
+            <h3>Subscribe <span>E</span> Receive A Free eBook</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quaerat tenetur fugiat laboriosam maiores
                 neque sint culpa recusandae cumque dolorum cupiditate
             </p>
             <input type="email" placeholder="Insert your mail...*">
-            <button>SUBSCRIBE</button>
+            <button class="orange-button">SUBSCRIBE</button>
             <div>Lorem ipsum dolor sit amet consectetur adipisicing el</div>
         </section>
 
@@ -36,9 +36,12 @@ export default {
         <section class="sect-3">
             <div class="part1">
                 <img src="../../img/imgs/avada-food-logo-mob.png" alt="">
-                <div id="social">
-
-                </div>
+                <ul id="social">
+                    <li><i class="fa-brands fa-facebook-f"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-youtube"></i></li>
+                </ul>
             </div>
             <div class="part2">
                 <ul>
@@ -48,19 +51,19 @@ export default {
             </div>
             <div class="part3">
                 <h4>CONTACT</h4>
-                <div>775 New York Ave</div>
-                <div>+0100-505-0000</div>
-                <div>info@your-domain.com</div>
+                <div><i class="fa-solid fa-location-dot"></i> 775 New York Ave, Brooklyn, Kings, New York 11203</div>
+                <div><i class="fa-solid fa-phone"></i> +0100-505-0000</div>
+                <div><i class="fa-solid fa-envelope"></i> info@your-domain.com</div>
             </div>
             <div class="part4">
-                <h4>GET OUR APP</h4>
+                <h4>GET OUR APP!</h4>
                 <div><img src="../../img/imgs/download-android.png" alt=""></div>
                 <div><img src="../../img/imgs/download-app-store.png" alt=""></div>
             </div>
         </section>
 
         <section class="sect-4">
-            Copyright
+            Copyright 2012 - 2020 | Avada Theme by ThemeFusion | All Rights Reserved | Powered by WordPress
         </section>
     </footer>
 </template>
@@ -72,15 +75,25 @@ footer {
     background-color: white;
 }
 
+h4 {
+    color: $orange;
+    letter-spacing: 5px;
+}
+
 .sect-1 {
     padding: 20vh 0;
     text-align: center;
     background-color: white;
-    // background-image: url(../../img/imgs/baking-recipes.png);
+    // background-image: url(../../img/imgs/);
 
     h3 {
         margin-bottom: 15px;
-        font-size: 24px;
+        font-size: 26px;
+        font-family: 'Times New Roman', Times, serif;
+
+        span {
+            color: $orange;
+        }
     }
 
     p {
@@ -121,6 +134,7 @@ footer {
     }
 }
 
+// sect 3
 .sect-3 {
     display: flex;
     justify-content: space-between;
@@ -132,12 +146,40 @@ footer {
         margin-bottom: 15px;
     }
 
+    .part1 {
+        img {
+            width: 175px;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+            color: $grey;
+            font-size: 14px;
+
+            li {
+                cursor: pointer;
+            }
+        }
+    }
+
     .part2 {
         ul {
             list-style-type: none;
             display: flex;
             flex-direction: column;
             gap: 15px;
+            color: $black;
+
+            li {
+                cursor: pointer;
+
+                &:hover {
+                    color: $orange;
+                }
+            }
 
             .disp-none {
                 display: none;
@@ -148,6 +190,17 @@ footer {
     .part3 {
         div {
             margin-bottom: 10px;
+            cursor: pointer;
+            width: 200px;
+
+            &:hover {
+                color: $orange;
+            }
+
+            i {
+                font-size: 14px;
+                margin-right: 10px;
+            }
         }
     }
 
@@ -158,13 +211,16 @@ footer {
 
         img {
             width: 175px;
+            cursor: pointer;
         }
     }
 }
 
 .sect-4 {
+    font-size: 12px;
     background-color: $bodyGrey;
     text-align: center;
-    padding: 30px 0 10px;
+    padding: 30px 0 20px;
+    border-top: 2px solid $lightGrey;
 }
 </style>

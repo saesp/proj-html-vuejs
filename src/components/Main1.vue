@@ -18,17 +18,17 @@ export default {
                 <div>
                     <img src="../../img/imgs/single-post-img3.jpg" alt="">
                     <h4>Food Corner: Top Japanese Restaurants for Sushi</h4>
-                    <div class="date">March 25, 2019</div>
+                    <div class="date">By admin | March 25th, 2019</div>
                 </div>
                 <div>
                     <img src="../../img/imgs/fi-roundup.jpg" alt="">
-                    <h4>Food Corner: Top Japanese Restaurants for Sushi</h4>
-                    <div class="date">March 25, 2019</div>
+                    <h4>Roundup: My New Favourite Recipes For Healthy Living</h4>
+                    <div class="date">By admin | March 25th, 2019</div>
                 </div>
                 <div>
                     <img src="../../img/imgs/fi-toasts.jpg" alt="">
-                    <h4>Food Corner: Top Japanese Restaurants for Sushi</h4>
-                    <div class=" date">March 25, 2019
+                    <h4>Why These Toasts with Tea are My New Favourite</h4>
+                    <div class=" date">By admin | March 25th, 2019
                     </div>
                 </div>
             </div>
@@ -48,6 +48,7 @@ export default {
 }
 
 #todays-pick {
+    color: white;
     padding: 30px 40px;
     border-radius: 7px;
     background-color: white;
@@ -67,7 +68,7 @@ export default {
         padding: 7px 12px;
         border-radius: 7px;
         position: absolute;
-        background-color: orange;
+        background-color: $orange;
         transform: translate(50%);
         right: 50%;
         top: -10px;

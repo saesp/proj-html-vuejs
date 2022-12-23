@@ -12,7 +12,7 @@ export default {
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius nobis aut voluptatem numquam dicta
                 </p>
             </span>
-            <button>READ OUR BLOG</button>
+            <button class="orange-button">READ OUR BLOG <i class="fa-solid fa-book-open-reader"></i></button>
         </div>
 
         <div class="imgs">
@@ -33,32 +33,32 @@ export default {
 
                 <div class="small-imgs">
                     <div class="card">
-                        <img src="../../img/imgs/single-post-img3.jpg" alt="">
+                        <img src="../../img/imgs/fi-roundup.jpg" alt="">
                         <h4>Food Corner: Top Japanese Restaurants for Sushi</h4>
                         <div class="date">March 25, 2019</div>
                     </div>
                     <div class="card">
-                        <img src="../../img/imgs/single-post-img3.jpg" alt="">
+                        <img src="../../img/imgs/fi-korean-food.jpg" alt="">
                         <h4>Food Corner: Top Japanese Restaurants for Sushi</h4>
                         <div class="date">March 25, 2019</div>
                     </div>
                     <div class="card">
-                        <img src="../../img/imgs/single-post-img3.jpg" alt="">
+                        <img src="../../img/imgs/fi-toasts.jpg" alt="">
                         <h4>Food Corner: Top Japanese Restaurants for Sushi</h4>
                         <div class="date">March 25, 2019</div>
                     </div>
                     <div class="card">
-                        <img src="../../img/imgs/single-post-img3.jpg" alt="">
+                        <img src="../../img/imgs/fi-street-food.jpg" alt="">
                         <h4>Food Corner: Top Japanese Restaurants for Sushi</h4>
                         <div class="date">March 25, 2019</div>
                     </div>
                     <div class="card">
-                        <img src="../../img/imgs/single-post-img3.jpg" alt="">
+                        <img src="../../img/imgs/fi-organic-breakfast.jpg" alt="">
                         <h4>Food Corner: Top Japanese Restaurants for Sushi</h4>
                         <div class="date">March 25, 2019</div>
                     </div>
                     <div class="card">
-                        <img src="../../img/imgs/single-post-img3.jpg" alt="">
+                        <img src="../../img/imgs/fi-water-side-rest.jpg" alt="">
                         <h4>Food Corner: Top Japanese Restaurants for Sushi</h4>
                         <div class="date">March 25, 2019</div>
                     </div>
@@ -68,8 +68,9 @@ export default {
             </span>
 
             <span class="sect-right">
-                <div>
+                <div id="square">
                     <img src="../../img/imgs/ad-bg.jpg" alt="">
+                    <span>VIEW OUR LATEST RECIPES</span>
                 </div>
                 <div>
                     <img src="../../img/imgs/singapore-featured-image.jpg" alt="">
@@ -111,10 +112,14 @@ export default {
     }
 
     button {
-        padding: 7px 12px;
+        padding: 8px 14px;
         color: white;
         background-color: $orange;
         border: 0;
+
+        i {
+            margin-left: 5px;
+        }
     }
 }
 
@@ -149,7 +154,7 @@ export default {
 
             .date {
                 padding-bottom: 20px;
-                border-bottom: 1px solid black;
+                border-bottom: 1px solid $lightGrey;
             }
 
             p {
@@ -189,10 +194,14 @@ export default {
             }
 
             button {
-                background-color: $grey;
+                background-color: $lightGrey;
                 width: 100%;
                 padding: 10px 0;
                 border: 0;
+
+                &:hover {
+                    background-color: $grey;
+                }
             }
 
         }
@@ -207,9 +216,24 @@ export default {
             margin-bottom: 30px;
         }
 
+        #square {
+            position: relative;
+
+            span {
+                color: black;
+                letter-spacing: 4px;
+                width: 120px;
+                text-align: center;
+                position: absolute;
+                transform: translate(50%, 50%);
+                right: 50%;
+                top: 33%;
+            }
+        }
+
         #input {
             padding-top: 30px;
-            border-top: 1px solid gray;
+            border-top: 2px solid $lightGrey;
             margin-bottom: 30px;
 
             input {
@@ -234,9 +258,14 @@ export default {
                 width: 25px;
                 height: 25px;
                 padding: 20px;
-                background-color: $grey;
+                background-color: $lightGrey;
                 position: relative;
                 border-radius: 7px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $grey;
+                }
 
                 i {
                     position: absolute;
